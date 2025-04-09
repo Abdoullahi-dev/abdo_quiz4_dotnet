@@ -29,6 +29,6 @@ steps:
     displayName: 'Push NuGet package'
     inputs:
       command: push
-      packagesToPush: '**/*.nupkg'
+      packagesToPush: '**/*.dll'
       nuGetFeedType: 'internal'
       publishVstsFeed: abdo_quiz4_agile/abdo_quiz4_feed
