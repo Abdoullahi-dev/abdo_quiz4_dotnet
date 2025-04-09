@@ -1,0 +1,34 @@
+trigger:
+  - main
+
+pool:
+  name: 'Default'
+
+steps:
+  - task: DotNetCoreCLI@2
+    displayName: 'Restore NuGet packages'
+    inputs:
+      command: restore
+      projects: '**/*.csproj'
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Build project'
+    inputs:
+      command: build
+      projects: '**/*.csproj'
+      arguments: '--configuration Release --framework net8.0'
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Pack NuGet package'
+    inputs:
+      command: pack
+      packagesToPack: '**/*.csproj'
+      versioningScheme: byPrereleaseNumber
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Push NuGet package'
+    inputs:
+      command: push
+      packagesToPush: '**/*.nupkg'
+      nuGetFeedType: 'internal'
+      publishVstsFeed: abdo_quiz4_agile/abdo_quiz4_feed

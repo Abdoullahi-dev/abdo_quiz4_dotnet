@@ -28,3 +28,4 @@ C:\Users\issea\Desktop\Sem 6\Devops\quiz4\obj\Debug\net8.0\refint\quiz4.dll
 C:\Users\issea\Desktop\Sem 6\Devops\quiz4\obj\Debug\net8.0\quiz4.pdb
 C:\Users\issea\Desktop\Sem 6\Devops\quiz4\obj\Debug\net8.0\quiz4.genruntimeconfig.cache
 C:\Users\issea\Desktop\Sem 6\Devops\quiz4\obj\Debug\net8.0\ref\quiz4.dll
+C:\Users\issea\Desktop\Sem 6\Devops\quiz4\obj\Debug\net8.0\quiz4.sourcelink.json
